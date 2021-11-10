@@ -15,3 +15,9 @@ if __name__=="__main__":
         else:
             os.mkdir(dir_path)
             gen_init_py(dir_path)
+
+    for x in range(1, 10):
+        dir_path = f"chapter_{x}"
+        os.remove(dir_path+"/__init__.py")
+        os.rmdir(dir_path)
+            
